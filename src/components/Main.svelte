@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
     import Step from "./Step.svelte";
+    import Progress from "./Progress.svelte";
 
     let steps = [
         {
@@ -52,11 +53,58 @@
                 <span class="poppins text-green-400">added!</span>
             </h2>
             <p class="text-base sm:text-lg md:text-xl">
-                How? It's <span class="text-green-400">easy!</span> simply send your coin of choice to the wallet address
+                How? It's <span class="text-green-400 font-bold">easy!</span> simply send your coin of choice to the wallet address
                 below, and the first coin to reach their goal, gets <span class="text-green-400">added!</span> Simples!
             </p>
         </div>
+<!--        <Progress/>-->
     </section>
+    <section>
+
+    </section>
+    <table class="table-auto">
+        <thead>
+        <tr>
+            <th class="text-left text-green-400">Coin</th>
+            <th class="text-left text-green-400">Fundraising Address</th>
+            <th class="text-left text-green-400">Download Core Files</th>
+            <th class="text-left text-green-400">Upgrade Core Files</th>
+            <th class="text-left text-green-400">Sync Blockchain</th>
+            <th class="text-left text-green-400">Staking</th>
+            <th class="text-left text-green-400">Transactions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>RDD</td>
+            <td class="font-mono">RrziAFXvr9Lv5eWyzANn1vS3bDT69jnteU</td>
+            <td class="opacity-50">Complete</td>
+            <td class="opacity-50">Complete</td>
+            <td class="font-bold">In Progress...</td>
+            <td>Waiting for funding</td>
+            <td>Waiting for funding</td>
+        </tr>
+        <tr>
+            <td>DIVI</td>
+            <td class="font-mono">DDfZy57R9FVeN2WdgcsTik6WbFcmPe5GtZ</td>
+            <td>Waiting for funding</td>
+            <td>Waiting for funding</td>
+            <td>Waiting for funding</td>
+            <td>Waiting for funding</td>
+            <td>Waiting for funding</td>
+        </tr>
+        <tr>
+            <td>PIVX</td>
+            <td class="font-mono">D61Q6tjWkGackqQkjtAN2yhDdoALHpB9Zu</td>
+            <td>Waiting for funding</td>
+            <td>Waiting for funding</td>
+            <td>Waiting for funding</td>
+            <td>Waiting for funding</td>
+            <td>Waiting for funding</td>
+        </tr>
+        </tbody>
+    </table>
+
     <section class="py-20 lg:py-32 flex flex-col gap-24" id="projects">
         <div class="flex flex-col gap-2 text-center">
             <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
